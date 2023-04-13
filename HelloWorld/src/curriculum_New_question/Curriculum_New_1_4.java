@@ -1,6 +1,7 @@
 package curriculum_New_question;
 
 public class Curriculum_New_1_4 {
+	// Q1 下記9個をクラス変数として宣言のみしてください
 	// Q1 バイト型
 	public static byte a;
 	// Q1 短整数型
@@ -22,9 +23,8 @@ public class Curriculum_New_1_4 {
 	
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		 // Q1 下記9個をクラス変数として宣言のみしてください
-		
-	     // Q2 それぞれのクラス変数をローカル内でそれぞれの初期値を代入し初期化してください
+
+	    // Q2 それぞれのクラス変数をローカル内でそれぞれの初期値を代入し初期化してください
 		// バイト型
 		a = 0;
 		// 短整数型
@@ -43,8 +43,8 @@ public class Curriculum_New_1_4 {
 		h = null;
 		// Q1 ブーリアン型 
 		i = false;
-	     // Q3 初期化をしたそれぞれの変数に下記の値を代入してください
-	
+	    
+		// Q3 初期化をしたそれぞれの変数に下記の値を代入してください
 	     // ・バイト型                 10
 		a = 10;
 	     // ・短整数型                 100
@@ -63,23 +63,31 @@ public class Curriculum_New_1_4 {
 		h = "ハロー";
 	     // ・ブーリアン型          	 true
 	    i = true;
-	     // Q4 下記の通りにコンソール出力されるようにしてください
-	     // 必ず変数を使用すること
-	
+	    
+	    // Q4 下記の通りにコンソール出力されるようにしてください
+	    // 必ず変数を使用すること
 	     // 11110
+	    System.out.println( a + b + c + d );
 	     // 20.0
+	    System.out.println(f + 9.5);
 	     // a ハロー true
-	     // 11130.0                    数字を全て足す
-	     // 10000000000                小数点以外の数字を全てかける
-	     // 0.105                      10.5割る100をする
-	     // -90                        10引く100をする
+	    System.out.println(g + h + i);
+	     // 11130.0      数字を全て足す
+	    System.out.println(a + b + c + d + e + f);
+	     // 10000000000     小数点以外の数字を全てかける
+	    System.out.println( a * b * c * d );
+	     // 0.105    10.5割る100をする
+	    System.out.println( f / 100 );
+	     // -90      10引く100をする
+	    System.out.println( a - 100 );
    	 
    	// Q5 
    	// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
    	//「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
-		String num = "20";
+		int num = 20;
 		int num1 = 23;
 		System.out.println("ハローJAVA" + (num + num1));
+
 	}
 
 }
