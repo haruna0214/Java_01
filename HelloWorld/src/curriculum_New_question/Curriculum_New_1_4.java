@@ -67,31 +67,20 @@ public class Curriculum_New_1_4 {
 	    // Q4 下記の通りにコンソール出力されるようにしてください
 	    // 必ず変数を使用すること
 	     // 11110
-	    	int a1  = 10 + 100 + 1000 + 10000;
-	    	System.out.println(a1);
+	    	System.out.println( a + b + c + d );
 //	    System.out.println( a + b + c + d );
 	     // 20.0
-	    	double a2  = 20.0;
-	    	System.out.println(a2);
+	    	System.out.println(f + e);
 	     // a ハロー true
-	    	char a3 = 'a';
-	    	String a4 = "ハロー";
-	    	boolean a5 = true;
-	    	System.out.println(a3 + a4 + a5);
+	    	System.out.println(g + h + i);
 	     // 11130.0      数字を全て足す
-	    	int a6  = 10 + 100 + 1000 + 10000;
-	    	float a7 = 9.5F;
-	    	double a8 = 10.5;
-	    	System.out.println(a6 + a7 + a8);
+	    	System.out.println(a + b + c + d + e + f);
 	     // 10000000000     小数点以外の数字を全てかける
-	    	int a9 = 10 * 100 * 1000 * 10000;
-	    	System.out.println(a9);	
+	    	System.out.println( a * b * c * d );
 	     // 0.105    10.5割る100をする
-	    	double a10 = 10.5 / 100;
-	    	System.out.println(a10);
+	    	System.out.println( f / 100 );
 	     // -90      10引く100をする
-	    	int a11 = 10 - 100;
-	    	System.out.println(a11);
+	    	System.out.println( a - 100 );
    	 
    	// Q5 
    	// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
