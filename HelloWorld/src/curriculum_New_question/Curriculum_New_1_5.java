@@ -28,7 +28,7 @@ public class Curriculum_New_1_5 {
 			System.out.println("体重は" + weight + "kgです");
 
 			String eat = "寿司";
-			System.out.println("は" + eat + "です");
+			System.out.println("好きな食べ物は" + eat + "です");
 
         // Q2 Q1で作成した自己紹介に続いて、BMIがコンソールに出力されるようにしてください
     	// 「BMIは○○です」
@@ -37,7 +37,8 @@ public class Curriculum_New_1_5 {
         // Q2を下記に記載
 //		// BMI = 体重(Kg) × (身長(m))2
 			double bmi = weight / ((height / 100) * (height / 100));
-			System.out.println("BMIは" + bmi + "です");
+			System.out.println("BMIは" + (Math.ceil(bmi * 10)) / 10 + "です");
+//			System.out.println("BMIは" + bmi + "です");
 		
     	    	
         // Q3 Q1で宣言した変数に再代入し、下記の通りコンソールに出力してください
