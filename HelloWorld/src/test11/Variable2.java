@@ -1,5 +1,7 @@
 package test11;
 
+import java.util.Random;
+
 public class Variable2 {
 
 	public static void main(String[] args) {
@@ -17,11 +19,11 @@ public class Variable2 {
 //		①int 型の変数 i に 100 を代入する。
 		int i = 100;
 //		②インクリメント演算子を適用して数値を 1 増やす。
-		i =  + ++i ;
+		i ++;
 //		③コンソールに変数 i の値を表示する。
 		System.out.println(i);
 //		④デクリメント演算子を適用して数値を 1 減らす。
-		i = + --i;
+		i --;
 //		⑤コンソールに変数 i の値を表示する。
 		System.out.println(i);
 
@@ -31,9 +33,9 @@ public class Variable2 {
 //		※数字は0～100までの間で表示されるようにしてください。
 //		例）
 //		あなたの年齢を予想します。
-//		あなたの年齢はおそらく〇〇歳ですね？
-		double rand = Math.random() * 100 + 0;
-		int number = (int)rand;
+////	あなたの年齢はおそらく〇〇歳ですね？
+		Random rand = new Random();
+		int number = rand.nextInt(101) + 0;
 		System.out.println("あなたの年齢はおそらく" + number + "歳ですね？");
 	}
 
