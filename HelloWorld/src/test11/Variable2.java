@@ -11,7 +11,7 @@ public class Variable2 {
 //		変数 x に自己代入を使って「20」を掛け算して下さい。
 //		その後 x の値をコンソールに表示して下さい。
 		int x = 3;
-		x = x * 20;
+		x *= 20;
 		System.out.println(x);
 		
 //		問２）
@@ -33,9 +33,9 @@ public class Variable2 {
 //		※数字は0～100までの間で表示されるようにしてください。
 //		例）
 //		あなたの年齢を予想します。
-////	あなたの年齢はおそらく〇〇歳ですね？
+//	あなたの年齢はおそらく〇〇歳ですね？
 		Random rand = new Random();
-		int number = rand.nextInt(101) + 0;
+		int number = rand.nextInt(101);
 		System.out.println("あなたの年齢はおそらく" + number + "歳ですね？");
 	}
 
