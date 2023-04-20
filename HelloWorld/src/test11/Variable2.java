@@ -33,9 +33,10 @@ public class Variable2 {
 //		※数字は0～100までの間で表示されるようにしてください。
 //		例）
 //		あなたの年齢を予想します。
-//	あなたの年齢はおそらく〇〇歳ですね？
+//		あなたの年齢はおそらく〇〇歳ですね？
 		Random rand = new Random();
 		int number = rand.nextInt(101);
+		System.out.println("あなたの年齢を予想します。");
 		System.out.println("あなたの年齢はおそらく" + number + "歳ですね？");
 	}
 
