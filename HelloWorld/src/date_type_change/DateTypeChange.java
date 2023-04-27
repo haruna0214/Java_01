@@ -38,25 +38,21 @@ public class DateTypeChange {
 //		②int型の変数を定義し、double型の変数をint型に型変換して代入下さい。
 //		　int型の変数をコンソールに出力して下さい。
 		// int型 変数定義
-		int isB = 4;
-		double isC = 12.0;
-		int isD = (int)isC;
-		System.out.println(isD);
+		int isB;
+		isB = (int)isA;
+		System.out.println(isB);
 		
 //		③String型の変数を定義し、int型の変数をString型に型変換して代入して下さい。
 //		　String型の変数をコンソールに出力して下さい。
 		// String型　変数定義
-		String isE = "ABCDE";
-		int isF = 5;
-		String isG = String.valueOf(isF);
-		System.out.println(isG);
+		String isE = "";
+		isE = String.valueOf(isB);
+		System.out.println(isE);
 		
 //		④「②」で定義したint型変数に、String型の変数をint型に型変換して代入して下さい。
 //		　int型の変数をコンソールに出力して下さい。
-		String isH = "123";
-		int isI = Integer.parseInt(isH);
-		isD = isI;
-		System.out.println(isD);
+		isB = Integer.parseInt(isE);
+		System.out.println(isB);
 	}
 
 }
