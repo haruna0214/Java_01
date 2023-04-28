@@ -1,4 +1,4 @@
-package conditional_expression;
+package conditional_expression_1_9;
 // *java.util.Randomパッケージをインポートして、Random関数を利用できるようにする*
 import java.util.Random;
 
