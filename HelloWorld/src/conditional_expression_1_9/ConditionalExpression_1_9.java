@@ -52,8 +52,7 @@ public class ConditionalExpression_1_9 {
 //		※④は System.out.println() のカッコ内に条件演算子（三項演算子）を使って、一行で書いてください。
 //		④もし変数 isTired が 0 であれば、変数 study を利用して「カリキュラムを続けます。」と表示する。
 		isTired = 0;
-		study = isTired == 0 ? "カリキュラムを続けます" : "";
-		System.out.println(study);
+		System.out.println((isTired == 0) ? study + "を続けます。" : "");
 	}
 
 }
