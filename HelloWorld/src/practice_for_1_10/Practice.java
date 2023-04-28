@@ -17,9 +17,11 @@ public class Practice {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		// *変数iに1を代入する*
-		for (int i = 3; i < 22; i +=2){
-			System.out.println(i);
+		// *①変数iに1を代入する*
+		int i = 1 ;
+		// *②初期化色に「3」代入、繰り返しの回数を指定、2ずつ足す処理*
+		for (i = 3; i < 22; i +=2){
+		System.out.println(i);
 		}
 	}
 
