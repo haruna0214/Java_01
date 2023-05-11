@@ -1,7 +1,7 @@
 package curriculum_B;
 // Objectsクラスをインポートする（nullチェックのため）
 import java.util.Objects;
-// パッケージをインポートする
+//標準入力を取得するため、Scannerクラスをインポート
 import java.util.Scanner;
 
 public class Qes1_3 {
