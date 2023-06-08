@@ -24,9 +24,7 @@ public class Qes6 {
 		// Randomクラスのインスタンスを作成し、変数randomに代入する
 		Random random = new Random();
 		// 乱数の宣言
-		int r;
-		// 乱数の最大値
-		int max = 0;
+		int r = 0;
 		// キーボードから入力した商品をiに一時的に代入
 		for (String i : product) {
 			// 0~11までの乱数を生成し変数rに代入する
@@ -61,16 +59,9 @@ public class Qes6 {
 			case "その他商品":
 			default:
 				System.out.println("『受け取った値』は指定の商品ではありません");
-//				break;
 			}
-//			products[5] = product == i ? "テレビ": "ディスプレイ";
-//			max = Math.max(max , r);
-//			 for (String j: products){
-//				 String str2 = i == product[5] ? max - r: (11 - r);
-//				 break;
-//			}
 		}
-		
+		scanner.close();
 	}
 
 }
