@@ -65,6 +65,7 @@ public class Qes7 {
         		kyouka += test[n][k];
         	}
         	System.out.println("合計点は、"+ kyouka + "です");
+        	// 代入
         	kyouka = 0;
         }       		
 		
