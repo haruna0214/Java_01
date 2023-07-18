@@ -14,10 +14,12 @@ public class Qes7 {
         int count = 0;
         // 各教科の点数
         int num = 0;
-        // 平均点
-        double avg;
+        // 生徒ごとの平均点
+        double countAvg;
         // 合計を集計するための変数
         int sum = 0;
+        // 教科ごとの平均点
+        double subjectAvg = 0;
         
         String []subject = {"英語","数学","理科","社会"};
         while(2 > score) {
@@ -48,25 +50,24 @@ public class Qes7 {
 
         // 生徒ごとの平均点を算出
         for (int j = 0; j < score; j++) {
-        	avg = (double)goukei[j] / subject.length;        	
-        	System.out.println(j+1 + "人目の合計点は、" + avg + "点です");
-        	// 改行
-    		System.out.println();
-
+        	countAvg = (double)goukei[j] / subject.length;        	
+        	System.out.println(j+1 + "人目の平均点は、" + countAvg + "点です");
         }
+        
+        // 改行
+		System.out.println();
         // 教科ごとの合計点を格納するため変数初期化
         int kyouka = 0;
         
         // 教科ごとの合計点を算出
         for(int k = 0; k < subject.length; k++) {
-        	System.out.println(subject[k]);
         	for(int n = 0; n < score; n++) {
-        		System.out.println("kamoku[" + n + "][" + k + "]：" + test[n][k]);
+//        		System.out.println("kamoku[" + n + "][" + k + "]：" + test[n][k]);
         		kyouka += test[n][k];
+        		subjectAvg = (double)kyouka / score; 
         	}
-        	System.out.println("合計点は、"+ kyouka + "です");
-        	// 代入
         	kyouka = 0;
+        	System.out.println(subject[k] + "の平均点は、" + subjectAvg + "点です");
         }       		
 		
 	}
