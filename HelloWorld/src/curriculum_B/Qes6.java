@@ -13,9 +13,7 @@ public class Qes6 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		// // Scannerクラスのインスタンスを作成
-		Scanner scanner = new Scanner(System.in);
-		// 商品を配列に格納する
-		String[] products = {"パソコン", "冷蔵庫","扇風機", "洗濯機", "加湿器", "テレビ", "ディスプレイ"};
+		Scanner scanner = new Scanner(System.in);		
 		// Scannerクラスのインスタンスから入力内容を取得する
 		String input_text = scanner.nextLine();
 		// カンマ「、」で区切り配列に格納する
