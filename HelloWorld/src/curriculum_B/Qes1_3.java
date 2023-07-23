@@ -110,7 +110,7 @@ public class Qes1_3 {
 				System.out.println("DRAW あいこ　もう一回しましょう！");
 				continue;
 			}
-			
+		scan.close();
 		}
 		
 	}
