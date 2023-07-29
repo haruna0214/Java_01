@@ -1,4 +1,6 @@
 package curriculum_B;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class Qes7 {
@@ -20,6 +22,8 @@ public class Qes7 {
         int sum = 0;
         // 教科ごとの平均点
         double subjectAvg = 0;
+     // 全体の平均点
+        double allAvg = 0;
         
         String []subject = {"英語","数学","理科","社会"};
         while(2 > score) {
@@ -30,7 +34,7 @@ public class Qes7 {
         int [] goukei;
         // 配列goukeiの要素を確保
         goukei = new int [score];
-        // 多次元配列の要素を確保
+        // 2次元配列の要素を確保
         int[][] test = new int [score][subject.length];
         
         do{
@@ -47,29 +51,39 @@ public class Qes7 {
     		sum = 0;
     		count++;
         }while(score != count);
-
+        
         // 生徒ごとの平均点を算出
         for (int j = 0; j < score; j++) {
         	countAvg = (double)goukei[j] / subject.length;        	
-        	System.out.println(j+1 + "人目の平均点は、" + countAvg + "点です");
+        	System.out.println(j+1 + "人目の平均点は" + countAvg + "点です。");
         }
         
         // 改行
 		System.out.println();
         // 教科ごとの合計点を格納するため変数初期化
         int kyouka = 0;
+        // 全体の平均点を足したものを格納
+        double allSum = 0;
         
-        // 教科ごとの合計点を算出
         for(int k = 0; k < subject.length; k++) {
         	for(int n = 0; n < score; n++) {
 //        		System.out.println("kamoku[" + n + "][" + k + "]：" + test[n][k]);
+        		// 教科ごとの合計点を算出
         		kyouka += test[n][k];
-        		subjectAvg = (double)kyouka / score; 
+        		// 教科ごとの平均点を算出
+        		subjectAvg = (double)kyouka / score;
         	}
         	kyouka = 0;
-        	System.out.println(subject[k] + "の平均点は、" + subjectAvg + "点です");
-        }       		
-		
+        	System.out.println(subject[k] + "の平均点は" + subjectAvg + "点です。");
+        	// 教科ごとの平均を足して配列に入れる
+        	allSum += subjectAvg;
+        }
+        	allAvg = (double)allSum / subject.length;
+        	BigDecimal bd = new BigDecimal(allAvg);
+        	BigDecimal bd1 = bd.setScale(2, RoundingMode.DOWN);
+        	// 全体の平均点を算出
+        System.out.println("全体の平均点は" + bd1 + "点です。");
+        scan.close();
 	}
 
 }
